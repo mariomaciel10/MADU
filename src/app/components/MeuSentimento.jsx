@@ -3,36 +3,34 @@ import "./MeuSentimento.css";
 
 const fotos = [
   {
-    imagem: "public/artes.png",
+    imagem: "/artes.png",
     nome: "sua arte"
   },
   {
-    imagem: "public/comoAgir.png",
+    imagem: "/comoAgir.png",
     nome: "seu jeito de agir"
   },
   {
-    imagem: "public/gosto.png",
-    nome: "o seus gostos"
+    imagem: "/gosto.png",
+    nome: "os seus gostos"
   },
   {
-    imagem: "public/seuCabelo.png",
+    imagem: "/seuCabelo.png",
     nome: "seu cabelo"
   },
   {
-    imagem: "public/seuEstilo.png",
+    imagem: "/seuEstilo.png",
     nome: "seu estilo"
   },
   {
-    imagem: "public/seuJeito.png",
+    imagem: "/seuJeito.png",
     nome: "e essa sua vibe"
   }
-  
-]
+];
 
 export default function MuralFotos() {
   return (
     <section className="mural">
-
       <div className="galeria">
         {fotos.map((foto, index) => (
           <div className="cardFoto" key={index}>
